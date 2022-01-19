@@ -65,7 +65,7 @@ public class InitialData implements ApplicationListener<ApplicationReadyEvent> {
                 },
                 0
         ));
-        
+
         questionRepository.save(createQuestion(
                 CS101,
                 "Justowanie jest to: ",
