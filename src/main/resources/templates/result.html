@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style/main.css" th:href="@{/style/main.css}">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
-    <title>Quiz Result</title>
+    <title>Rejestracja miejsc</title>
 </head>
 <body>
 <div class="content">
     <header>
         <nav>
-            <a class="nav-link float-left" th:href="@{/}" href="home.html">Home</a>
-            <a class="nav-link float-left" th:href="@{/quiz/result}" href="result.html">Result</a>
+            <a class="nav-link float-left" th:href="@{/}" href="home.html">Strona główna</a>
+            <a class="nav-link float-left" th:href="@{/quiz/result}" href="result.html">Rezerwacje</a>
 
             <a class="nav-fancy-link float-right" th:href="@{/login}" href="login.html"
                sec:authorize="!isAuthenticated()">Login</a>

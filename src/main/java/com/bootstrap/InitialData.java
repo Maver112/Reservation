@@ -49,9 +49,10 @@ public class InitialData implements ApplicationListener<ApplicationReadyEvent> {
 
         Subject CS101 = new Subject();
         CS101.setSubjectCode("CS101");
-        CS101.setTitle("Komputery i Technologia");
+        CS101.setTitle("Komputer");
 
         subjectRepository.save(CS101);
+
 
         questionRepository.save(createQuestion(
                 CS101,
@@ -64,7 +65,7 @@ public class InitialData implements ApplicationListener<ApplicationReadyEvent> {
                 },
                 0
         ));
-
+        
         questionRepository.save(createQuestion(
                 CS101,
                 "Justowanie jest to: ",
@@ -172,6 +173,7 @@ public class InitialData implements ApplicationListener<ApplicationReadyEvent> {
                 },
                 3
         ));
+
 
     }
 

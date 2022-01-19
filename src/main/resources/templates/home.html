@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style/main.css" th:href="@{/style/main.css}">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
-    <title>Quiz</title>
+    <title>Strona główna</title>
 </head>
 <body>
 <div class="content">
     <header>
         <nav>
-            <a class="nav-link float-left" th:href="@{/}" href="home.html">Home</a>
-            <a class="nav-link float-left" th:href="@{/quiz/result}" href="result.html">Result</a>
+            <a class="nav-link float-left" th:href="@{/}" href="home.html">Strona główna</a>
+            <a class="nav-link float-left" th:href="@{/quiz/result}" href="result.html">Pokaż rezerwacje</a>
 
             <a class="nav-fancy-link float-right" th:href="@{/login}" href="login.html" sec:authorize="!isAuthenticated()">Login</a>
             <form th:action="@{/logout}" method="post" class="float-right" sec:authorize="isAuthenticated()">
@@ -27,9 +27,9 @@
 
 
     <div>
-        <h1 class="heading text-center top-bottom-margin">Rozpocznij Quiz</h1>
+        <h1 class="heading text-center top-bottom-margin">Zarezerwuj rodzaj rozrywki</h1>
         <div class="grid">
-            <a href="quiz.html" th:href="@{/quiz/start/CS101}" class="quiz-link"><span>Komputery i Technologia</span></a>
+            <a href="quiz.html" th:href="@{/quiz/start/CS101}" class="quiz-link"><span>Rezerwacja</span></a>
         </div>
     </div>
 </div>

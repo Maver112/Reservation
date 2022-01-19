@@ -14,17 +14,17 @@
 
         <h1 class="heading text-center">Login</h1>
 
-        <div class="login-error top-margin text-center" th:if="${param.error}">Invalid username or password</div>
-        <div class="logout-success top-margin text-center" th:if="${param.success}">Logout successful</div>
+        <div class="login-error top-margin text-center" th:if="${param.error}">Nieprawidłowy login lub hasło</div>
+        <div class="logout-success top-margin text-center" th:if="${param.success}">Wylogowanie pomyślne</div>
 
         <form th:action="@{/login}" method="post">
             <label class="input-field-container">
-                Username
+                Login
                 <input id="username" type="text" name="username" class="input-field full-width">
             </label>
 
             <label class="input-field-container">
-                Password
+                Hasło
                 <input id="password" type="password" name="password" class="input-field full-width">
             </label>
 
